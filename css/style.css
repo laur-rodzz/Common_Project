@@ -1,11 +1,11 @@
 body {
     background-color: #2c3e50;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-family: "Arial", sans-serif;
 }
 
-header h1, div, div p, div ul, div ol {
+header div, div p, div ul, div ol {
     margin: 8px 0px;
 }
 
@@ -44,7 +44,7 @@ nav li {
 
 nav li:hover {
     background-color: #2c3e50;
-    color: #fff;
+    color: #fff; 
 }
 
 nav li#pets {
@@ -62,6 +62,7 @@ nav li#recipes {
 nav li a {
     font-size: 20px;
     padding: 4px 16px;
+    color: #fff; 
 }
 
 nav li.current {
@@ -85,6 +86,10 @@ nav li.current a {
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
+}
+
+nav li a:focus {
+    outline: 2px solid #fff; 
 }
 
 @keyframes header {
@@ -111,11 +116,6 @@ header {
     animation-duration: 1.5s;
 }
 
-header h1 {
-    font-size: 400%;
-    text-align: center;
-}
-
 main {
     padding: 0% 5% 5%;
 }
@@ -129,18 +129,25 @@ div {
 }
 
 div h2 {
+
     font-size: 200%;
     font-weight: bold;
     margin: 8px 0px 0px;
+    
 }
 
 div h3 {
     background-color: #3498db;
     color: #fff;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 0px 0px 0px;
     font-size: 150%;
     padding: 2px;
-    margin: 12px 0px 0px;
+    margin: 0 auto;
+    position: relative;
+    left: -5%;
+    width: 110%;
+    text-align: center;
+    line-height: 2;
 }
 
 div p {
@@ -160,6 +167,10 @@ div img, div video {
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
+}
+
+div video:hover{
+    transform: scale(1.1); 
 }
 
 div img:hover {
